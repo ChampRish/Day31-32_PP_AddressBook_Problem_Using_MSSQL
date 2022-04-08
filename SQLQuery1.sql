@@ -32,3 +32,7 @@ Delete from ContactsTable where FirstName='Jiya'
 
 /* UC6 Retrieve Person belonging to a City or State */
 SELECT * from ContactsTable where State='UP' or State='NewDelhi';
+
+/* UC7 Count of address book by City and State */
+select City,COUNT(City) as countOfCity from ContactsTable group by City order by City;
+select State,COUNT(State) as countOfStates from ContactsTable group by State order by State;
