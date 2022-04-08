@@ -29,3 +29,6 @@ UPDATE ContactsTable set State='UP' where FirstName='Rishabh' or FirstName='Amit
 
 /* UC5 Delete contact by name */
 Delete from ContactsTable where FirstName='Jiya'
+
+/* UC6 Retrieve Person belonging to a City or State */
+SELECT * from ContactsTable where State='UP' or State='NewDelhi';
