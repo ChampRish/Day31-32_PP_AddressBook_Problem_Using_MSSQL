@@ -23,3 +23,6 @@ Insert into ContactsTable(FirstName,LastName,Address,City,State,ZipCode,PhoneNum
 ('Satty','K','above showroom','Panipat','HP','411042','7894561230','sattyo@mail.com'),
 ('Reeta','D','Near temple','Chennai','Tamil Nadu','600005','7744112233','reetad@mail.com'),
 ('Jiya','G','Opp mall','Ahemdabad','Gujrat','700073','7775553330','jiyag@mail.com');
+
+/* UC4 Edit existing contact person using their name */
+UPDATE ContactsTable set State='UP' where FirstName='Rishabh' or FirstName='Amit'
