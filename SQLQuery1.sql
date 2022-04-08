@@ -59,3 +59,6 @@ UPDATE ContactsTable set PersonType='Friends' where AdrBookName='AB1'
 UPDATE ContactsTable set PersonType='Family' where AdrBookName='AB2'
 UPDATE ContactsTable set PersonType='Profession' where AdrBookName='AB3'
 SELECT * FROM ContactsTable
+
+/*UC10 Ability to get number of contact persons i.e. count by type */
+SELECT PersonType,COUNT(PersonType) as count from ContactsTable group by PersonType
