@@ -36,3 +36,13 @@ SELECT * from ContactsTable where State='UP' or State='NewDelhi';
 /* UC7 Count of address book by City and State */
 select City,COUNT(City) as countOfCity from ContactsTable group by City order by City;
 select State,COUNT(State) as countOfStates from ContactsTable group by State order by State;
+
+/* UC8 sort name entries based on city */
+Insert into ContactsTable(FirstName,LastName,Address,City,State,ZipCode,PhoneNumber,EmailId) values 
+('Rahul','S','near school','Agra','UP',400092,'7895553330','rahuls@mail.com'),
+('Chetan','L','near collage','Ahemdabad','Gujrat',400089,'9877553030','chetanl@mail.com'),
+('Neha','P','Kalina','Mumbai','Maharastra',400098,'7733400300','nehap@mail.com');
+SELECT * from ContactsTable
+
+SELECT * FROM ContactsTable WHERE City = 'Agra' ORDER BY FirstName ASC;	--ascending
+SELECT * FROM ContactsTable WHERE City = 'Agra' ORDER BY FirstName DESC;	--descending
