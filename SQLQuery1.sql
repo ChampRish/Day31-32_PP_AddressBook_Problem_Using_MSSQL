@@ -26,3 +26,6 @@ Insert into ContactsTable(FirstName,LastName,Address,City,State,ZipCode,PhoneNum
 
 /* UC4 Edit existing contact person using their name */
 UPDATE ContactsTable set State='UP' where FirstName='Rishabh' or FirstName='Amit'
+
+/* UC5 Delete contact by name */
+Delete from ContactsTable where FirstName='Jiya'
